@@ -1,16 +1,16 @@
 class MonksController < CharactersController
   def index
-    @Monks = Monk.all
+    @monks = Monk.all
   end
     
   def show
-    @Monks = Monk.find(params[:id])
+    @monks = Monk.find(params[:id])
   end
   
   def create
-    @Monk = Monk.new(Monk_params)
+    @monk = Monk.new(Monk_params)
 
-    if @Monk.save
+    if @monk.save
       redirect_to @Monk
     else
       render 'new'
@@ -18,13 +18,13 @@ class MonksController < CharactersController
   end
   
   def edit
-    @Monk = Monk.find(params[:id])
+    @monk = Monk.find(params[:id])
   end
   
   def update
-    @Monk = Monk.find(params[:id])
+    @monk = Monk.find(params[:id])
     
-    if @Monk.update(Monk_params)
+    if @monk.update(Monk_params)
       redirect_to @Monk
     else
       render 'edit'
@@ -32,14 +32,14 @@ class MonksController < CharactersController
   end
   
   def destroy
-    @Monk = Monk.find(params[:id])
-    @Monk.destroy
+    @monk = Monk.find(params[:id])
+    @monk.destroy
 
-    redirect_to Monks_path
+    redirect_to monks_path
   end
 end
 
 private 
   def Monk_params
-    params.require(:Monk).permit(:strength, :dexterity, :constitution, :intelligence, :wisdom, :charisma, :armorclass, :gold)
+    params.require(:monk).permit(:strength, :dexterity, :constitution, :intelligence, :wisdom, :charisma, :armorclass, :gold)
   end
