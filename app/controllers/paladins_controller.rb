@@ -1,0 +1,2 @@
+class PaladinsController < ApplicationController
+end
