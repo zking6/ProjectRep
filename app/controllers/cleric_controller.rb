@@ -1,2 +1,0 @@
-class ClericController < ApplicationController
-end
