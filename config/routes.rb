@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   get 'welcome/index'
   resources :charaters
   
-  
+get "characters/new" => "characters#new"
   root 'welcome#index'
  
  
