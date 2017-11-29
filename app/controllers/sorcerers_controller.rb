@@ -1,0 +1,2 @@
+class SorcerersController < ApplicationController
+end
