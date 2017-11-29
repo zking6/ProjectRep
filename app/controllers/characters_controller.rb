@@ -19,7 +19,6 @@ class CharactersController < ApplicationController
     @character = Character.find(params[:id])
   end
   
-
   
   def create
     @character = Character.new(character_params)
