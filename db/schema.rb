@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171127213140) do
+ActiveRecord::Schema.define(version: 20171129172226) do
 
   create_table "barbarians", force: :cascade do |t|
     t.integer "strength"
@@ -100,6 +100,32 @@ ActiveRecord::Schema.define(version: 20171127213140) do
   end
 
   create_table "paladins", force: :cascade do |t|
+    t.integer "strength"
+    t.integer "dexterity"
+    t.integer "constitution"
+    t.integer "intelligence"
+    t.integer "wisdom"
+    t.integer "charisma"
+    t.string "armorclass"
+    t.integer "gold"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "rangers", force: :cascade do |t|
+    t.integer "strength"
+    t.integer "dexterity"
+    t.integer "constitution"
+    t.integer "intelligence"
+    t.integer "wisdom"
+    t.integer "charisma"
+    t.string "armorclass"
+    t.integer "gold"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "rogues", force: :cascade do |t|
     t.integer "strength"
     t.integer "dexterity"
     t.integer "constitution"
