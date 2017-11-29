@@ -1,0 +1,2 @@
+class WarlocksController < ApplicationController
+end
