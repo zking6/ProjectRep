@@ -4,9 +4,11 @@
 
 <%= form_for :characters do |f| %>
    <p>Name:  <%= f.text_field :name %><br></p>
-  
+   <p>Background:</p>
   <%= f.text_area :background, size: "60x12" %><br>
-  <%= f.text_field :race %><br>
-  <%= f.text_field :class %><br>
+  
+  <p>Race:  <%= f.text_field :race %><br></p>
+  <p>Class:  <%= f.text_field :class %><br></p>
+  
   <%= f.submit "Create" %>
 <% end %>
