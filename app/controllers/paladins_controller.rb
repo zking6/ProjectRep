@@ -1,5 +1,5 @@
 class PaladinsController < CharactersController
-def index
+  def index
     @paladins = Paladin.all
   end
     
