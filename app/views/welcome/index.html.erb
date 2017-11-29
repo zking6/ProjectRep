@@ -3,12 +3,15 @@
 <h2>Please select from the options below</h2>
 
 <%= form_for :characters do |f| %>
-   <p>Name:  <%= f.text_field :name %><br></p>
+   <p>Name:</p>
+   <div class = "center"><%= f.text_field :name %><br></div>
    <p>Background:</p>
-  <%= f.text_area :background, size: "60x12" %><br>
+   <div class = "center2"><%= f.text_area :background, size: "60x12" %><br></div>
   
-  <p>Race:  <%= f.text_field :race %><br></p>
-  <p>Class:  <%= f.text_field :class %><br></p>
+  <p>Race:</p>
+  <div class = "center"><%= f.text_field :race %><br></div>
+  <p>Class:</p>
+  <div class = "center"><%= f.text_field :class %><br></div><br>
+  <div class = "center"><%= f.submit "Create" %></div>
   
-  <%= f.submit "Create" %>
 <% end %>
