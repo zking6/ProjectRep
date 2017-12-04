@@ -15,15 +15,29 @@ h1 {
 }
 
 h2 {
-    
+    text-align: center;
 }
 
 input[type=button], input[type=submit], input[type=reset] {
-    background-color: red;
+    background-color: #971B2F;
     border: none;
     color: black;
     padding: 16px 32px;
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
+}
+
+p{
+    text-align: center;
+}
+
+.center{
+    margin: auto;
+    width: 10%;
+}
+
+.center2{
+    margin: auto;
+    width: 30%;
 }
