@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   get 'welcome/index'
-  resources :characters
+  
+  resources :characters do
+    resources :comments
+  end
   
 get "characters/new" => "characters#new"
   root 'welcome#index'
