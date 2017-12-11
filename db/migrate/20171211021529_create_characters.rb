@@ -1,6 +1,10 @@
-class CreateClerics < ActiveRecord::Migration[5.1]
+class CreateCharacters < ActiveRecord::Migration[5.1]
   def change
-    create_table :clerics do |t|
+    create_table :characters do |t|
+      t.string :name
+      t.text :background
+      t.string :race
+      t.string :classes
       t.integer :strength
       t.integer :dexterity
       t.integer :constitution

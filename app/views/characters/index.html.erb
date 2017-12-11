@@ -1,0 +1,15 @@
+<p>You're Character has been Generated!</p>
+
+<table>
+  <tr>
+    <th>Your Name is |</th>
+    <th>Your Background is |</th>
+    
+  </tr>
+  <% @characters.each do |character| %>
+    <tr>
+      <td><%= character.name %></td>
+      <td><%= character.background %></td>
+    </tr>
+  <% end %>
+</table>
