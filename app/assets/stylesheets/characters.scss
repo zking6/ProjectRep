@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+
 html {
     height: 100%;
     -webkit-background-size: cover;
@@ -11,17 +12,18 @@ html {
     background-size: cover;
     background: #800020;
     background-repeat:no-repeat;
-  background: linear-gradient(to bottom right, #800020, grey); /* Standard syntax */
+  background: linear-gradient(to bottom right,  #80000B, grey); /* Standard syntax */
 }
 
 body {
-     background-color: #800020;
+     background-color: grey;
 }
 
-a:link {
-    color: green;
+table {
+    width: 100%;
 }
 
-a:visited {
-    color: green;
+th {
+    text-align: left;
+    height: 50px;
 }

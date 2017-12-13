@@ -5,18 +5,18 @@
 
 body
 {
-     height: 60%;
+     height: 65%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     background: #800020;
     background-repeat:no-repeat;
-  background: linear-gradient(to bottom right, grey, #800020); /* Standard syntax */
+  background: linear-gradient(to bottom right, grey, #80000B); /* Standard syntax */
 }
 
 a:link {
-    color: grey;
+    color: black;
 }
 
 a:visited {
@@ -28,7 +28,7 @@ a:hover {
 }
 
 h1 {
-    color: #971B2F;
+    color: black;
     text-align: center;
     font-family: "Impact";
 }
