@@ -5,7 +5,26 @@
 
 body
 {
-    background-color: grey;
+     height: 60%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background: #800020;
+    background-repeat:no-repeat;
+  background: linear-gradient(to bottom right, grey, #800020); /* Standard syntax */
+}
+
+a:link {
+    color: grey;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: gold;
 }
 
 h1 {

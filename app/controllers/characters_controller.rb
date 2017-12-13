@@ -401,6 +401,6 @@ private
     end
     
     def character_params
-        params.require(:characters).permit(:name, :background, :race, :classes, :strength, :dexterity, :constitution, :intelligence, :wisdom, :charisma, :armorclass, :gold)
+        params.require(:character).permit(:name, :background, :race, :classes, :strength, :dexterity, :constitution, :intelligence, :wisdom, :charisma, :armorclass, :gold)
     end
 end

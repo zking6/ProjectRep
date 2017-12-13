@@ -1,3 +1,27 @@
 // Place all the styles related to the Characters controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+html {
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background: #800020;
+    background-repeat:no-repeat;
+  background: linear-gradient(to bottom right, #800020, grey); /* Standard syntax */
+}
+
+body {
+     background-color: #800020;
+}
+
+a:link {
+    color: green;
+}
+
+a:visited {
+    color: green;
+}

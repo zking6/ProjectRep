@@ -4,6 +4,11 @@
 </p>
 
 <p>
+    <strong>Background:</strong> <br />
+    Your story is: <%= @character.background %> <br/>
+</p>
+
+<p>
   <strong>Stats:</strong> <br/>
   Strength:
   <%= @character.strength %> <br/>
@@ -23,6 +28,7 @@
     <strong>Equipment:</strong> <br />
     You are profecient in <%= @character.armorclass %> usage and in your pockets you find <%= @character.gold %> GP.<br />
 </p>
+
 
 <h2>Player Notes and Discussion</h2>
 <% @character.comments.each do |comment| %>
